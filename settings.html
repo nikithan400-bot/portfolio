@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings | Nikitha Portfolio</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="snow-container"></div>
+    <div class="logo">
+        <img src="portfolio logo.png" alt="My Portfolio Logo" class="logo-img">
+        <span>My Portfolio</span>
+    </div>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html" class="btn-contact">Contact</a>
+    </nav>
+
+    <div class="profile-menu">
+        <div class="profile" id="profileToggle">
+            <img src="Niki blazer pic.jpg" alt="Profile">
+        </div>
+
+        <div class="profile-dropdown" id="profileDropdown">
+            <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+            <a href="settings.html" class="active"><i class="fas fa-cog"></i> Settings</a>
+            <a href="logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+    </div>
+</header>
+
+<!-- ================= SETTINGS SECTION ================= -->
+<section class="settings-section">
+    <div class="settings-container center">
+        <h1>Settings</h1>
+        <p>Manage your account and preferences here.</p>
+
+        <div class="settings-card">
+            <h2>Account Settings</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter new password">
+
+            <button class="btn primary">Update Account</button>
+        </div>
+
+        <div class="settings-card">
+            <h2>Preferences</h2>
+            <label>
+                <input type="checkbox" checked> Enable Notifications
+            </label>
+            <label>
+                <input type="checkbox"> Dark Mode
+            </label>
+
+            <button class="btn primary">Save Preferences</button>
+        </div>
+    </div>
+</section>
+
+<!-- ================= JS ================= -->
+<script src="script.js"></script>
+</body>
+</html>
